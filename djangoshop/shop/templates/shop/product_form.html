@@ -1,0 +1,13 @@
+{% extends 'shop/base.html' %}
+{% block title %} Product modification {% endblock %}
+
+
+{% block content %}
+<h1>Changing product parameters: {{product.name_pr}}, id={{product.id}}</h1>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}

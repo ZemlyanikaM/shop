@@ -1,0 +1,14 @@
+{% extends 'shop/base.html' %}
+{% block title %} The product {% endblock %}
+
+
+{% block content %}
+<h1>Name: {{ product.name_pr }}</h1>
+<p>Quantity: {{ product.quantity }}</p>
+<p>Cost: {{ product.cost }}</p>
+<p>Description: {{ product.description_pr }}</p>
+<p>Incoming date: {{ product.date_add_product }}</p>
+<br>
+{{ product.image_pr }}
+
+{% endblock %}
